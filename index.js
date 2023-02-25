@@ -69,7 +69,7 @@ console.log(combinedObj);
 
 
 //8
-const getData=({name,address})=>console.log(name+"\n"+address.city);
+const getData=({name,address:{city,state}})=>console.log(name+"\n"+city);
 const person = {
   name: 'John Doe',
   address: {
